@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navegacao, header, ul, #sobreMim, li{
+    display: flex;
+}
+
+header{
+    background-color: rgb(143, 216, 253);
+    color: black;
+    height: 6rem;
+    position: sticky;
+    top: 0;
+}
+
+ul{
+    margin-left: 31rem;
+    margin-top: 2rem;  
+}
+
+.secao{
+    margin-left: 2rem;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px;
+    height: 2.5rem;
+    width: 9rem;
+    justify-content: center;
+}
+
+.secao:hover{
+    background-color: rgba(250, 246, 133, 0.726);
+    color: black;
+    border-radius: 1rem;
+}
+
+button{
+    margin-left: 2rem;
+    padding: 10px;
+    height: 2.5rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    font-size: 1rem;
+    border: 1px solid black;
+}
+
+button:hover{
+    background-color: rgb(250, 246, 133);
+    border: 1px solid white
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+h1{
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+}
+
+figure{
+    padding: 4rem;
+    transition: 0.5s ease;
+}
+
+figure:hover{
+    transform: translateY(-15px);
+}
+
+img{
+    width: 12rem;
+    border-radius: 10%;
+    border: 5px solid rgb(250, 246, 133);
+}
+
+#sobreMim{
+    background-color: rgb(84, 215, 255);
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    background-color: black;
+    border: 1px solid black;
+    width: 18rem;
+    height: 3px;
+    margin-top: 1rem;
+}
+
+.historia{
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 3rem;
+    height: 25rem;
+    width: 71rem;
+    transition: 0.5s ease;
+}
+
+.historia:hover{
+    background-color: rgba(226, 226, 226, 0.416);
+    transform: translateY(-15px);
+}
+
+h2{
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.historia p{
+    margin-top: 4rem;
+}
+
+#habilidades{
+    background-color: rgb(37, 190, 237);
+    padding-top: 1px;
+    height: 30rem;
+}
+
+#linguagens, #habilidades h2, #contato h2{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    margin: 2rem;
+    margin-top: 6rem;
+    width: 12rem;
+    height: 8rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    transition: 0.5s ease;
+    background-color: rgba(250, 246, 133, 0.652);
+}
+
+.card:hover{
+    transform: scale(1.1);
+    background-color: rgb(250, 246, 133);
+}
+
+#contato{
+    background-color: rgb(16, 140, 212);
+    padding-top: 1px;
+}
