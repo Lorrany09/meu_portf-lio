@@ -1,3 +1,15 @@
+:root{
+    --azulUm: rgb(143, 216, 253);
+    --azulDois: rgb(84, 215, 255);
+    --azulTres: rgb(37, 190, 237);
+    --azulQuatro: rgb(16, 140, 212);
+    --amarelo: rgb(250, 246, 133);
+    --amareloTransparente: rgba(250, 246, 133, 0.726);
+    --cinzaTransparente: rgba(226, 226, 226, 0.416);
+    --corDoTexto: black;
+    --corDoTextoSecundaria: white;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,8 +21,8 @@
 }
 
 header{
-    background-color: rgb(143, 216, 253);
-    color: black;
+    background-color: var(--azulUm);
+    color: var(--corDoTexto);
     height: 6rem;
     position: sticky;
     top: 0;
@@ -32,8 +44,7 @@ ul{
 }
 
 .secao:hover{
-    background-color: rgba(250, 246, 133, 0.726);
-    color: black;
+    background-color: var(--amareloTransparente);
     border-radius: 1rem;
 }
 
@@ -47,17 +58,17 @@ button{
     align-items: center;
     border-radius: 1rem;
     font-size: 1rem;
-    border: 1px solid black;
+    border: 1px solid var(--corDoTexto);
 }
 
 button:hover{
-    background-color: rgb(250, 246, 133);
+    background-color: var(--amarelo);
     border: 1px solid white
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: var(--corDoTexto);
     font-size: 20px;
 }
 
@@ -78,11 +89,11 @@ figure:hover{
 img{
     width: 12rem;
     border-radius: 10%;
-    border: 5px solid rgb(250, 246, 133);
+    border: 5px solid var(--amarelo);
 }
 
 #sobreMim{
-    background-color: rgb(84, 215, 255);
+    background-color: var(--azulDois);
 }
 
 .titulo{
@@ -91,8 +102,8 @@ img{
 }
 
 hr{
-    background-color: black;
-    border: 1px solid black;
+    background-color: var(--corDoTexto);
+    border: 1px solid var(--corDoTexto);
     width: 18rem;
     height: 3px;
     margin-top: 1rem;
@@ -105,16 +116,18 @@ hr{
     height: 25rem;
     width: 71rem;
     transition: 0.5s ease;
+    color: var(--corDoTexto);
 }
 
 .historia:hover{
-    background-color: rgba(226, 226, 226, 0.416);
+    background-color: var(--cinzaTransparente);
     transform: translateY(-15px);
 }
 
 h2{
     margin-top: 2rem;
     font-size: 3rem;
+    color: var(--corDoTexto);
 }
 
 .historia p{
@@ -122,7 +135,7 @@ h2{
 }
 
 #habilidades{
-    background-color: rgb(37, 190, 237);
+    background-color: var(--azulTres);
     padding-top: 1px;
     height: 30rem;
 }
@@ -143,15 +156,17 @@ h2{
     align-items: center;
     font-size: 2rem;
     transition: 0.5s ease;
-    background-color: rgba(250, 246, 133, 0.652);
+    background-color: var(--amareloTransparente);
+    color: var(--corDoTexto);
 }
 
 .card:hover{
     transform: scale(1.1);
-    background-color: rgb(250, 246, 133);
+    background-color: var(--amarelo);
+    color: var(--corDoTextoSecundaria);
 }
 
 #contato{
-    background-color: rgb(16, 140, 212);
+    background-color: var(--azulQuatro);
     padding-top: 1px;
 }
