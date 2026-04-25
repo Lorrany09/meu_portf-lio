@@ -7,7 +7,7 @@
     --amareloTransparente: rgba(250, 246, 133, 0.726);
     --cinzaTransparente: rgba(226, 226, 226, 0.416);
     --corDoTexto: black;
-    --corDoTextoSecundaria: white;
+    --corDoTextoSecundaria: black;
 }
 
 *{
@@ -86,7 +86,7 @@ figure:hover{
     transform: translateY(-15px);
 }
 
-img{
+#sobreMim img{
     width: 12rem;
     border-radius: 10%;
     border: 5px solid var(--amarelo);
@@ -121,7 +121,7 @@ hr{
 
 .historia:hover{
     background-color: var(--cinzaTransparente);
-    transform: translateY(-15px);
+    transform: translateX(-15px);
 }
 
 h2{
@@ -140,7 +140,7 @@ h2{
     height: 30rem;
 }
 
-#linguagens, #habilidades h2, #contato h2{
+#linguagens, #contatos, #habilidades h2, #contato h2{
     display: flex;
     justify-content: center;
 }
@@ -169,4 +169,45 @@ h2{
 #contato{
     background-color: var(--azulQuatro);
     padding-top: 1px;
+    height: 35rem;
+}
+
+.cardContato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+    justify-content: center; 
+    margin: 2rem;
+    margin-top: 6rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    transition: 0.5s ease;
+    background-color: var(--amareloTransparente);
+    color: var(--corDoTexto);
+}
+
+.cardContato span{
+    margin-top: 2rem;
+}
+
+.cardContato:hover{
+    transform: scale(1.1);
+    background-color: var(--amarelo);
+    color: var(--corDoTextoSecundaria);
+}
+
+.cardContato svg{
+    width: 8rem;
+    fill: currentColor;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
 }
